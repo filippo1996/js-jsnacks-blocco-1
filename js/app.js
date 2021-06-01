@@ -71,3 +71,34 @@ for(var i = 0; i < 6; i++){
 
 console.log(numbers);
 */
+
+
+/**
+ * In un array sono contenuti i nomi degli invitati alla festa del grande Gatsby
+ * chiedi all’utente il suo nome e comunicagli se può partecipare o no alla festa.
+ */
+
+//Lista nomi di invitati alla festa
+var nameList = ['Pippo','Pluto','Topolino','Minni','Paperino','Paperina'];
+
+var nameUser = prompt('Metti il tuo nome per vedere se puoi entrare')?.trim();
+
+//Settiamo la stringa con la prima lettera maiuscola e tutto il resto minuscolo
+if(nameUser){
+    nameUser = nameUser.charAt(0).toUpperCase() + nameUser.substring(1).toLowerCase();
+
+    //Contolliamo se il nome dell'utente si trova nell'array nameList con ciclo while
+    var result = false;
+    var i = 0;
+
+    while(nameList[i] && !result){
+        if(nameUser === nameList[i]){
+            result = true;
+        }
+        i++;
+    }
+
+    var message = result ? nameUser + ' puoi partecipare alla festa' : nameUser + ' non puoi partecipare alla festa';
+
+    document.getElementById('user').innerHTML = message;
+}
