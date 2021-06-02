@@ -1,6 +1,5 @@
 //L’utente inserisce due parole in successione, con due prompt. Il software stampa prima la parola più corta, poi la parola più lunga.
 //Se uguale lunghezza dire sono uguali e stamparle entrambe. 
-/*
 var parola1 = prompt('Prima parola');
 var parola2 = prompt('Seconda parola');
 
@@ -13,7 +12,6 @@ if(parola1.length < parola2.length){
 }
 
 document.getElementById('parola').innerHTML = lunghezzaParola;
-*/
 
 
 
@@ -23,7 +21,6 @@ Variante: stampare solo i numeri pari
 */
 
 //ciclo for
-/*
 var somm = 0;
 for(var i = 0; i < 5; i++){
     var num = parseInt(prompt('inserisci il numero'));
@@ -51,14 +48,11 @@ for(var i = 0; i < numeriPari.length; i++){
     document.getElementById('numPari').innerHTML += numeriPari[i] + '<br>';
 }
 
-*/
-
 
 /*
  Crea un array vuoto. Chiedi per 6 volte all’utente di inserire un numero, se è dispari inseriscilo nell’array
 */
 
-/*
 var numbers = [];
 
 for(var i = 0; i < 6; i++){
@@ -70,7 +64,7 @@ for(var i = 0; i < 6; i++){
 }
 
 console.log(numbers);
-*/
+
 
 
 /**
