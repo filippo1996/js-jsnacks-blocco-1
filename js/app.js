@@ -96,3 +96,17 @@ if(nameUser){
 
     document.getElementById('user').innerHTML = message;
 }
+
+
+
+
+
+
+//Esempio di utilizzo opportuno del ciclo while
+var nome;
+
+while(!nome){
+    nome = prompt('inserisci il tuo nome');
+}
+
+console.log(nome);
